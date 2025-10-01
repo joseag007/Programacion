@@ -1,0 +1,35 @@
+/*
+* Descripción: Calculo de salario
+* Autor: José
+* Fecha: 01/10/2025
+*/
+package ejercicio3;
+
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		int num1;
+		System.out.print("Introduzca un primer valor: ");
+		num1 = teclado.nextInt(); // petición de primer valor
+		
+		int num2;
+		System.out.print("Introduzca un primer valor: ");
+		num2 = teclado.nextInt(); // petición de primer valor
+		
+		int var1,var2;
+		var1=num1;
+		var2=num2;
+		
+		num1=var2;
+		num2=var1;
+		
+		System.out.println(num1);
+		
+	}
+
+}

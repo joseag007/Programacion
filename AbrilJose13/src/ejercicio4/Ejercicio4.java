@@ -1,0 +1,34 @@
+/*
+* Descripción: redondeos clae Math
+* Autor: José
+* Fecha: 01/10/2025
+*/
+package ejercicio4;
+
+import java.util.Scanner;
+
+public class Ejercicio4 {
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		double valor;
+		System.out.print("Introduzca un valor: ");
+		valor = teclado.nextDouble(); // petición del valor
+		
+		// Aplicar la función ceil
+		double ceilValue = Math.ceil(valor);
+        System.out.println(  "Al aplicar la función ceil, "+ valor + " = " + ceilValue);
+        
+        // Aplicar la función floor
+        double floorValue = Math.floor(valor);
+        System.out.println( "Al aplicar la función floor, "+ valor + " = " + floorValue);
+        
+        // Aplicar la función round
+        long roundValue = Math.round(valor);
+        System.out.println(  "Al aplicar la función round, "+ valor + " = " + roundValue);
+	
+        
+        
+	}
+}

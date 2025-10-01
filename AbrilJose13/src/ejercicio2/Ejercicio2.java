@@ -1,3 +1,8 @@
+/*
+* Descripción: Calculo de salario
+* Autor: José
+* Fecha: 30/09/2025
+*/
 package ejercicio2;
 
 import java.util.Scanner;
@@ -8,13 +13,23 @@ public class Ejercicio2 {
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		double euros;
+		double euros1;
 		System.out.print("Introduzca una cantidad en euros: ");
-		euros = teclado.nextDouble(); // petición de cantidad de euros
+		euros1 = teclado.nextDouble(); // petición de cantidad de euros
 		
-		double pesetas = euros * 100/166.386;
+		double pesetas1 = euros1 * 166.386;
 		
-		System.out.println(euros+ " euros son " + pesetas +" pesetas.");
+		System.out.println(euros1+ " euros son " + pesetas1 +" pesetas.");
+		
+		Scanner raton = new Scanner(System.in);
+		
+		double pesetas2;
+		System.out.print("Introduzca una cantidad en pesetas: ");
+		pesetas2 = raton.nextDouble(); // petición de cantidad de pesetas
+		
+		double euros2 = pesetas2 / 166.386;
+		
+		System.out.println(pesetas2+ " euros son " + euros2 +" pesetas.");	
 		
 
 	}
