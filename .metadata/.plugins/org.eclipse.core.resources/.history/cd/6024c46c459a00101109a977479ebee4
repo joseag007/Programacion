@@ -1,0 +1,25 @@
+/*
+* Descripción: petición informacion equipo
+* Autor: José
+* Fecha: 25/09/2025
+*/
+package ejercicio4;
+
+public class Ejercicio4 {
+	
+	enum Talla {PEQUENA, MEDIANA, GRANDE, EXTRAGRANDE}
+	
+	public static void main(String[] args) {
+	
+		Talla tallaS = Talla.PEQUENA;
+        Talla tallaM = Talla.MEDIANA;
+        Talla tallaL = Talla.GRANDE;
+        Talla tallaXL = Talla.EXTRAGRANDE;
+        
+        System.out.println("Esta es una talla " + tallaS);
+        System.out.println("Esta es una talla " + tallaM);
+        System.out.println("Esta es una talla " + tallaL);
+        System.out.println("Esta es una talla " + tallaXL);
+        
+	}
+}

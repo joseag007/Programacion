@@ -1,0 +1,17 @@
+package entradaDatos;
+
+import java.util.Scanner;
+
+public class PeticiónDatos {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		
+	byte edadAlumno = teclado.nextByte();
+	
+	System.out.println("Edad del alumno: " + edadAlumno);
+
+	}
+
+}

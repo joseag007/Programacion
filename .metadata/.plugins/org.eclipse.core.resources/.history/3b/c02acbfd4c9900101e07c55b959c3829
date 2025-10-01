@@ -1,0 +1,27 @@
+/*
+* Descripción: primer programa Java
+* Autor: José
+* Fecha: 24/09/2025
+*/
+package ejercicio3;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		
+		int num1 = 0,num2 = 0; //Declaración e inicialización
+		double val1,val2; // Declaración
+		String nombre = "José", apellidos = "Abril García"; //Declaración e inicialización
+		
+		System.out.println("variable num1: "+ num1 + " variable num2: " + num2);
+
+		val1 = 47.9;  // Inicialización
+		val2 = 29.4; // Inicialización
+		
+		System.out.println("valor 1: " + val1 + " valor 2: " + val2);
+		
+		System.out.println("Mi nombre es "+ nombre+ " y mis apellidos " + apellidos);
+		
+	}
+
+}

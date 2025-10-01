@@ -1,0 +1,19 @@
+/*
+* Descripción: ejemplos de operaciones bases
+* Autor: José
+* Fecha: 25/09/2025
+*/
+package operadoresBase;
+
+public class EjOperacionesBases {
+
+	public static void main(String[] args) {
+
+		int dato1 = 5, dato2 = 3;
+		
+		int suma = dato1 + dato2;
+		System.out.println("La suma es: " + suma);
+
+	}
+
+}

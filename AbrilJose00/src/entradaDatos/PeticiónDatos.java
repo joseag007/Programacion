@@ -1,0 +1,31 @@
+package entradaDatos;
+
+import java.util.Scanner;
+
+public class PeticiónDatos {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		
+	byte edadAlumno;
+	
+	System.out.print("Introduzca la edad del alumno: ");
+	edadAlumno = teclado.nextByte();
+	System.out.println("Edad del alumno: " + edadAlumno);
+
+	teclado.nextLine(); // Después de pedir un valor numérico y antes de pedir un String
+	String nombreAlumno;
+	System.out.print("Introduzca el nombre del alumno: ");
+	nombreAlumno = teclado.nextLine();
+	System.out.println("Nombre del alumno: " + nombreAlumno);
+	
+	double alturaAlumno;
+	
+	System.out.print("Introduzca la altura del alumno: ");
+	alturaAlumno = teclado.nextDouble();
+	System.out.println("Altura del alumno: " + alturaAlumno);
+	
+	}
+
+}

@@ -1,0 +1,23 @@
+/*
+* Descripción: prctica palos de la baraja
+* Autor: José
+* Fecha: 25/09/2025
+*/
+package palosBaraja;
+
+public class PalosDeLaBaraja {
+	
+	public enum PaloBaraja {OROS, COPAS, ESPADAS, BASTOS};
+
+	public static void main(String[] args) {
+	
+		PaloBaraja palo;
+        
+        System.out.println ("PALOS DE LA BARAJA ESPAÑOLA");
+        System.out.println ("---------------------------");
+        
+        palo = PaloBaraja.OROS;
+        System.out.println("Palo 1: " + palo);
+	}
+
+}

@@ -1,0 +1,20 @@
+package ejercicio2;
+
+import java.util.Scanner;
+
+public class Ejercicio2 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		double euros;
+		System.out.print("Introduzca una cantidad en euros: ");
+		euros = teclado.nextDouble(); // petición de cantidad de euros
+		
+		double pesetas = euros ;
+		
+
+	}
+
+}
