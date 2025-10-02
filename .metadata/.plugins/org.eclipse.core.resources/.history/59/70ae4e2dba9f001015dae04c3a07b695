@@ -1,0 +1,21 @@
+package condicionesIF;
+
+import java.util.Scanner;
+
+public class CondicionesIF {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		String diaSemana;
+		System.out.println("Introduzca el día de la semana: ");
+		diaSemana=teclado.next();
+		
+		if (diaSemana == "Jueves") {
+		System.out.println("Bien, sabes que día de la semana es.");
+		}
+
+	}
+
+}
