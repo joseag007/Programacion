@@ -1,8 +1,3 @@
-/*
-* Descripción: operaciones con funciones math
-* Autor: José
-* Fecha: 01/10/2025
-*/
 package ejercicio5;
 
 import java.util.Scanner;
@@ -13,11 +8,11 @@ public class Ejercicio5 {
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		double num1;
+		int num1;
 		System.out.print("Introduzca un primer valor: ");
 		num1 = teclado.nextInt(); // petición de primer valor
 		
-		double num2;
+		int num2;
 		System.out.print("Introduzca un segundo valor: ");
 		num2 = teclado.nextInt(); // petición del segundo valor
 		
@@ -33,8 +28,8 @@ public class Ejercicio5 {
         double raizCuadrada = Math.sqrt(num1);
         System.out.println("La raíz cuadrada de " + num1 + " es: " + raizCuadrada);
         
-        //  valor random entre el 0 y el segundo número
-        double numRandom = Math.random() * num2; 
+        //  valor random del segundo número
+        double numRandom = Math.random() * num2; // Valor aleatorio entre 0 y el segundo número
         System.out.println("Un valor aleatorio entre 0 y " + num2 + " es: " + numRandom);
 	      
 	}
