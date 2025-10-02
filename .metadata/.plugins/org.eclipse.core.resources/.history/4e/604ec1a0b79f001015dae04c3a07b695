@@ -12,8 +12,8 @@ public class CondicionesIF {
 		System.out.println("Introduzca su edad: ");
 		edad=teclado.nextInt();
 		
-		if (edad >= 18 && edad<30) {
-		System.out.println("Eres joven");
+		if (edad > 18 && edad<30) {
+		System.out.println("Eres mayor de edad");
 		}
 
 	}
