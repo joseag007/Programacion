@@ -1,0 +1,42 @@
+/*
+* Descripción: operaciones con funciones math
+* Autor: José
+* Fecha: 01/10/2025
+*/
+package ejercicio5;
+
+import java.util.Scanner;
+
+public class Ejercicio5 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		double num1;
+		System.out.print("Introduzca un primer valor: ");
+		num1 = teclado.nextInt(); // petición de primer valor
+		
+		double num2;
+		System.out.print("Introduzca un segundo valor: ");
+		num2 = teclado.nextInt(); // petición del segundo valor
+		
+		// que número es menor
+		double menor = Math.min(num1, num2);
+        System.out.println("El número menor es: " + menor);
+        
+        //  valor del primer número elevado al segundo
+        double potencia = Math.pow(num1, num2);
+        System.out.println("El valor de " + num1 + " elevado a la " + num2 + " es: " + potencia);
+        
+        // raíz cuadrada del primer número
+        double raizCuadrada = Math.sqrt(num1);
+        System.out.println("La raíz cuadrada de " + num1 + " es: " + raizCuadrada);
+        
+        //  valor random entre el 0 y el segundo número
+        double numRandom = Math.random() * num2; 
+        System.out.println("Un valor aleatorio entre 0 y " + num2 + " es: " + numRandom);
+	      
+	}
+
+}

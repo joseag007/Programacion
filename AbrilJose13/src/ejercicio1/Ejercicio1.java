@@ -33,9 +33,9 @@ public class Ejercicio1 {
 		System.out.print("Introduzca la cantidad de años trabajados en la empresa: ");
 		añosTrabajados = teclado.nextInt(); // petición de años trabajados
 		
-		double salarioNeto = salarioBruto - salarioBruto * 15/100;
-		double aumento = salarioBruto * 2/100 * añosTrabajados;
-		double salarioTotal = salarioNeto +aumento;
+		double salarioNeto = salarioBruto - salarioBruto * 15/100; // calculo del salario neto
+		double aumento = salarioBruto * 2/100 * añosTrabajados; // calculo del aumento en funcion de los años trabajados
+		double salarioTotal = salarioNeto +aumento; // calculo del salario total
 		
 		System.out.println("Estimad@ "+nombre + " "+ apellidos + ", su salario bruto es "+salarioBruto+", teniendo en cuenta un IRPF del 15% su salario neto es " + salarioNeto + ".");
 		System.out.println("Debido a sus " + añosTrabajados + " años trabajando en la empresa su salario se incrementará en un 2% por cada año. El aumento es de " + aumento+" y el salario total es "+salarioTotal+"." );

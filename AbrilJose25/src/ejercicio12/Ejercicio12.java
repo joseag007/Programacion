@@ -1,0 +1,33 @@
+/*
+* Descripción: petición de nombre, dirección y teléfono
+* Autor: José
+* Fecha: 03/10/2025
+*/
+package ejercicio12;
+
+import java.util.Scanner;
+
+public class Ejercicio12 {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		String nombre;
+		System.out.print("Introduzca su nombre: ");
+		nombre = teclado.nextLine(); // petición del dato nombre
+		System.out.println("Hola " + nombre);
+		
+		String direccion;
+		System.out.print("Introduzca su dirección: ");
+		direccion = teclado.nextLine(); // petición del dato direccion
+		System.out.println("Su dirección es:  " + direccion);
+		
+		int telefono;
+		System.out.println("Introduzca su número de teléfono: ");
+		telefono = teclado.nextInt(); // petición del dato telefono
+		System.out.println("Su número de teléfono es: " + telefono);
+		
+	}
+
+}

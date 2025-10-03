@@ -13,20 +13,21 @@ public class ClasificarNotas {
 		notaCuantitativa = teclado.nextInt();
 		
 		
-		String notaCualitativa = "No válida";
+		String notaCualitativa = "ERROR";
 		
-		if ( notaCuantitativa < 5 )
-		    notaCualitativa= "INSUFICIENTE";
-		if ( notaCuantitativa >=5 && notaCuantitativa < 6  )
-		    notaCualitativa= "SUFICIENTE";
-		if ( notaCuantitativa >=6 && notaCuantitativa < 7  )
-		    notaCualitativa= "BIEN";
-		if ( notaCuantitativa >= 7 && notaCuantitativa < 9 )
-		    notaCualitativa= "NOTABLE";
-		if ( notaCuantitativa >=9 && notaCuantitativa<= 10 )
-		    notaCualitativa= "SOBRESALIENTE";
+		if (notaCuantitativa > 0 && notaCuantitativa <= 10)
+			if ( notaCuantitativa < 5 )
+				notaCualitativa= "La calificación cualitativa equivalente es: INSUFICIENTE";
+			else if ( notaCuantitativa < 6  )
+				notaCualitativa= "La calificación cualitativa equivalente es: SUFICIENTE";
+			else if (  notaCuantitativa < 7  )
+				notaCualitativa= "La calificación cualitativa equivalente es: BIEN";
+			else if ( notaCuantitativa < 9 )
+				notaCualitativa= "La calificación cualitativa equivalente es: NOTABLE";
+			else if ( notaCuantitativa<= 10 )
+				notaCualitativa= "La calificación cualitativa equivalente es: SOBRESALIENTE";
 		
-		System.out.println ("La calificación es: " + notaCualitativa);
+		System.out.println (notaCualitativa);
 
 	}
 

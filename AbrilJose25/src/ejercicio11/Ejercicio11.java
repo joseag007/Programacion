@@ -1,3 +1,8 @@
+/*
+* Descripción: ejercicio ampliación petición de nombre
+* Autor: José
+* Fecha: 02/10/2025
+*/
 package ejercicio11;
 
 import java.util.Scanner;
@@ -9,7 +14,7 @@ public class Ejercicio11 {
 		
 		String nombre;
 		System.out.print("Introduzca su nombre: ");
-		nombre = teclado.nextLine();
+		nombre = teclado.nextLine(); // petición del dato nombre
 		System.out.println("Hola " + nombre);
 
 	}

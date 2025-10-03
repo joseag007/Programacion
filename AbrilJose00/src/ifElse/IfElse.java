@@ -1,0 +1,31 @@
+package ifElse;
+
+import java.util.Scanner;
+
+public class IfElse {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner(System.in);
+		
+		int numero;
+		System.out.println("Introduzca un número: ");
+		numero = teclado.nextInt(); // petición del dato telefono
+
+
+		if (numero > 0) {
+			System.out.print("El número es positivo");
+			if (numero > 50) {
+				System.out.print(" y es mayor que 50");
+			}
+		}else {
+			if (numero == 0) {
+				System.out.print("El número es cero");
+			}else {
+				System.out.print("El número es negativo");
+			}
+		} // cierro cadena 
+		
+		
+	}
+}

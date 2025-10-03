@@ -21,7 +21,7 @@ public class Ejercicio5 {
 		System.out.print("Introduzca un segundo valor: ");
 		num2 = teclado.nextInt(); // petición del segundo valor
 		
-		// que número es menor
+		// número es menor
 		double menor = Math.min(num1, num2);
         System.out.println("El número menor es: " + menor);
         
@@ -33,7 +33,7 @@ public class Ejercicio5 {
         double raizCuadrada = Math.sqrt(num1);
         System.out.println("La raíz cuadrada de " + num1 + " es: " + raizCuadrada);
         
-        //  valor random entre el 0 y el segundo número
+        //  valor aleatorio entre el 0 y el segundo número
         double numRandom = Math.random() * num2; 
         System.out.println("Un valor aleatorio entre 0 y " + num2 + " es: " + numRandom);
 	      
