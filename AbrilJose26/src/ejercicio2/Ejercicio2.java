@@ -1,3 +1,8 @@
+/*
+* Descripción: que número es mayor
+* Autor: José
+* Fecha: 03/10/2025
+*/
 package ejercicio2;
 
 import java.util.Scanner;
@@ -5,8 +10,6 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
-
-		
 		
 		Scanner teclado = new Scanner(System.in);
 		
