@@ -1,0 +1,35 @@
+/*
+* Descripción: admisión a estudios
+* Autor: José
+* Fecha: 07/10/2025
+*/
+package ejercicio3;
+
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+        byte edad;
+        System.out.print("Introduzca su edad: ");
+        edad = teclado.nextByte();
+        teclado.nextLine();  // Consumir el salto de línea pendiente después de nextByte()
+        
+        if (edad < 18) {
+            System.out.println("No tiene la edad requerida para realizar estos estudios.");
+        } else {
+            String nombre;
+            System.out.print("Introduzca su nombre: ");
+            nombre = teclado.nextLine();
+            
+            String apellidos;
+            System.out.print("Introduzca sus apellidos: ");
+            apellidos = teclado.nextLine();
+            
+            System.out.println("Nombre: " + nombre + "\nApellidos: " + apellidos + "\nEdad: " + edad + "\n\nUsted ha sido admitido.");
+        }
+	}
+
+}

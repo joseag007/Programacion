@@ -1,0 +1,26 @@
+package calculoTipoTest;
+
+import java.util.Scanner;
+
+public class CalculoTipoTest {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		int aciertos, fallos;
+		
+		System.out.print("Introduzca el número de aciertos que ha obtenido: ");
+		aciertos = teclado.nextInt();
+		
+		System.out.print("Introduzca el número de fallos que ha obtenido: ");
+		fallos = teclado.nextInt();
+		
+		int preguntas = fallos + aciertos;
+		
+		if (preguntas<0 || preguntas>20) {
+			System.out.println("Datos erróneos");
+		}
+
+	}
+
+}
