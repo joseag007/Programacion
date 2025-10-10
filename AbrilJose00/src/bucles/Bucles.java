@@ -8,20 +8,25 @@ public class Bucles {
 		
 		 Scanner teclado = new Scanner(System.in);
 	        
-	        int numero;
-	        
-	        System.out.println("Dame un número (0 para terminar): ");
-	        numero = teclado.nextInt();
-	        int contador = 1;
-	        int suma = numero;
+	        int numero, suma =0, contador = 0;
 	       
-	            while (numero != 0 && contador < 8) {
+	           /* while (numero != 0 && contador < 8) {
 	                System.out.println("Dame otro número: ");
 	                numero = teclado.nextInt();
 	                contador = contador + 1;
 	                suma = suma + numero; //acumulador
 	            }
-	            System.out.println("La suma es: " + suma);
-	        
+	            System.out.println("La suma es: " + suma);*/
+	            
+	            do {
+	            	System.out.println("Dame otro número: ");
+	                numero = teclado.nextInt();
+	                contador = contador + 1;
+	                suma = suma + numero;
+	                
+	            	} while (numero != 0 && contador < 8);
+	            	
+	            
+	            System.out.println("La suma es: " + suma + " y la cantidad de números es: " + --contador);
 	}
 }
