@@ -31,7 +31,7 @@ public class Ejercicio5 {
 
         double resultado;
 
-        // Evaluar la opción seleccionada
+        // Evaluar la operación seleccionada
         switch (opcion) {
             case 1:
                 resultado = num1 + num2;
@@ -53,6 +53,9 @@ public class Ejercicio5 {
                     System.out.println("No se puede dividir entre cero.");
                 }
                 break;
+            default:
+                System.out.println("Opción no válida. Por favor, ingrese un número entre 1 y 4.");
+        
            }
 		
 	}
