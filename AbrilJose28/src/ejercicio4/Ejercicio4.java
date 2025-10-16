@@ -1,3 +1,9 @@
+/*
+ * Descripción: media y número de ceros
+ * Autor: José Abril
+ * Fecha: 14/10/25
+ */
+
 package ejercicio4;
 
 import java.util.Scanner;

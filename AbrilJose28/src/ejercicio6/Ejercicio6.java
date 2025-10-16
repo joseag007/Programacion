@@ -1,0 +1,35 @@
+/*
+ * Descripción: calculo de cuadrados
+ * Autor: José Abril
+ * Fecha: 16/10/25
+ */
+package ejercicio6;
+
+import java.util.Scanner;
+
+public class Ejercicio6 {
+
+	public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        int num = 0;
+        int total=0;
+        
+        System.out.println("Introduce un número: ");
+        num = teclado.nextInt(); 
+        
+        while ( num >= 0) {
+        	total= num * num;
+            System.out.println("El cuadrado de " + num + " es: " + total);
+            
+        	
+        	System.out.print("Introduce un número: ");
+            num = teclado.nextInt(); 
+            
+        }
+
+        System.out.println("Ha introducido un número negativo");
+        
+	}
+}

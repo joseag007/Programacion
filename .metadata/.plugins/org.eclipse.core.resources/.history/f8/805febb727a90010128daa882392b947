@@ -1,0 +1,17 @@
+package bucleFor;
+
+public class BucleFor {
+
+	public static void main(String[] args) {
+		
+		int numero = 5; // hnúmero para calcular su tabla de multiplicar
+		
+		for (int contador = 10; contador >= 0; contador--) {
+			
+			System.out.println(numero + " por " + contador + " es igual a: " + numero*contador);
+			
+		}
+
+	}
+
+}

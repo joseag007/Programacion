@@ -1,0 +1,31 @@
+package intervaloMultiplosDe3;
+
+import java.util.Scanner;
+
+public class IntervaloMultiplo3 {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.print("Introduzca el primer valor: ");
+        int num1 = teclado.nextInt();
+        
+        System.out.print("Introduzca el segundo valor: ");
+        int num2 = teclado.nextInt();
+
+        for (int i = num1; i <= num2; i++) {
+            if (i % 3 == 0) {
+                System.out.println(i);  // Mostrar el número si es múltiplo de 3
+            }
+        }
+        
+        for (int i = num1; i >= num2; i--) {
+            if (i % 3 == 0) {
+                System.out.println(i);  // Mostrar el número si es múltiplo de 3
+            }
+        }
+        
+	}
+
+}

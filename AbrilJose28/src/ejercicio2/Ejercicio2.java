@@ -1,3 +1,9 @@
+/*
+ * Descripción: número 1 a 100 do while
+ * Autor: José Abril
+ * Fecha: 13/10/25
+ */
+
 package ejercicio2;
 
 public class Ejercicio2 {
