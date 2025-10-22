@@ -41,8 +41,6 @@ public class Ejercicio5 {
             contadorTotal++;
 
         } while (contadorTotal < 10);
-
-        // mostrar resultados
         
             System.out.println("Media de los positivos: " + sumaPositivos / contadorPositivos);
         
