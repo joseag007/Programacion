@@ -1,7 +1,7 @@
 /*
  * Descripción: leer números no nulos, cuantos positivos y cuantos negativos
  * Autor: José Abril
- * Fecha: 21/10/25
+ * Fecha: 23/10/25
  */
 package ejercicio8;
 
@@ -51,5 +51,4 @@ public class Ejercicio8 {
 
 
 	}
-
 }

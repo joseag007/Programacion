@@ -1,7 +1,7 @@
 /*
  * Descripción: numero de 1 a X
  * Autor: José Abril
- * Fecha: 21/10/25
+ * Fecha: 22/10/25
  */
 package ejercicio4;
 

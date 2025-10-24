@@ -1,7 +1,7 @@
 /*
  * Descripción: leer números no nulos
  * Autor: José Abril
- * Fecha: 21/10/25
+ * Fecha: 22/10/25
  */
 package ejercicio6;
 

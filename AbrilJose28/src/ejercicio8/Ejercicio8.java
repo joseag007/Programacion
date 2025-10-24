@@ -1,7 +1,7 @@
 /*
  * Descripción: ficha senderista
  * Autor: José Abril
- * Fecha: 16/10/25
+ * Fecha: 17/10/25
  */
 package ejercicio8;
 
