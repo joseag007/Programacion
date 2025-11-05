@@ -12,7 +12,7 @@ public class Ejercicio3 {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);
-		double[] nums = new double[10]; // Array para guardar los números
+		double[] nums = new double[10];
         int contador = 0;
 
         // Pedir los 10 números al usuario
