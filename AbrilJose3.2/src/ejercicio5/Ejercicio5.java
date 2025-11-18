@@ -1,7 +1,7 @@
 /*
  * Descripción: calculo media salarios y brecha salarial
  * Autor: José Abril
- * Fecha: 5/11/25
+ * Fecha: 6/11/25
  */
 package ejercicio5;
 

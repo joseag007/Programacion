@@ -10,7 +10,7 @@ public class MetodosVarios {
 		System.out.println(par);
 	}
 
-
+    // esPar calcula si un valor es par. Devuelve un tipo booleano
 	public static boolean esPar (int numero) {
 		boolean par;
 		if (numero%2==0) {
@@ -20,7 +20,11 @@ public class MetodosVarios {
 		}
 		return par;
 	}
+	
+	// calcula si un valor es impar
+	public static boolean esImpar (int numero) {
 
+		return !esPar(numero);
 	}
 
-
+	}

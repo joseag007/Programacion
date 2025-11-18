@@ -11,84 +11,102 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		
-Scanner teclado = new Scanner(System.in);
-		
+		Scanner scanner = new Scanner(System.in);
 
-        // Mostrar el menú de operaciones
-        System.out.println("--- MENÚ DE OPERACIONES ---");
-        System.out.println("1. Calcular PVP de cada matrícula.");
-        System.out.println("2. Aplicar oferta a un tipo de matrícula (sin iva).");
-        System.out.println("3. Calcular el importe total de matrículas realizadas (sin iva).");
-        System.out.println("4. Salir");
+        double[] precios = {10.0, 15.0, 20.0};  // Fitness, Yoga, Musculación
 
-        System.out.print("Seleccione una opción: ");
-        int opcion = teclado.nextInt();
-        int iva;
-        int contadorIva=1;
-        double precio1=10.0;
-        double precio2=15.0;
-        double precio3=20.0;
-        int descuento;
-        int cantidad1=0, cantidad2=0, cantidad3=0;
+        while (true) {
+            System.out.println("\n--- MENÚ DE OPERACIONES ---");
+            System.out.println("1. Calcular PVP de cada matricula.");
+            System.out.println("2. Aplicar oferta a un tipo de matricula (sin iva).");
+            System.out.println("3. Calcular el importe total de matriculas realizadas (sin iva).");
+            System.out.println("4. Salir");
+            System.out.print("Seleccione una opción: ");
+            int opcion = scanner.nextInt();
 
-        // Evaluar la operación seleccionada
-        switch (opcion) {
+            switch (opcion) {
+                case 1:
+                    calcularPVP(scanner, precios);
+                    break;
+                case 2:
+                    aplicarOferta(scanner, precios);
+                    break;
+                case 3:
+                    calcularImporteTotal(scanner, precios);
+                    break;
+                case 4:
+                    System.out.println("Saliendo del programa...");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Opción no válida. Intente de nuevo.");
+            }
+        }
+    }
+
+    /**
+     * Método para calcular el PVP de cada matrícula.
+     * @param scanner Objeto Scanner para leer la entrada del usuario.
+     * @param precios Arreglo con los precios de las matriculas.
+     */
+    public static void calcularPVP(Scanner scanner, double[] precios) {
+        double[] iva = new double[3];
+        for (int i = 0; i < 3; i++) {
+            System.out.print("Ingrese el IVA para el tipo de matrícula " + (i + 1) + " (4 - 10 - 21): ");
+            iva[i] = scanner.nextDouble();
+        }
+
+        for (int i = 0; i < 3; i++) {
+            double pvp = precios[i] * (1 + iva[i] / 100);
+            System.out.printf("El PVP de la actividad de %s es: %.2f€\n", getTipoMatricula(i + 1), pvp);
+        }
+    }
+
+    /**
+     * Método para aplicar oferta a un tipo de matrícula.
+     * @param scanner Objeto Scanner para leer la entrada del usuario.
+     * @param precios Arreglo con los precios de las matriculas.
+     */
+    public static void aplicarOferta(Scanner scanner, double[] precios) {
+        System.out.print("Seleccione tipo de matrícula (1. Fitness, 2. Yoga o 3. Musculación): ");
+        int tipo = scanner.nextInt();
+        System.out.print("Ingrese el % de descuento a aplicar: ");
+        double descuento = scanner.nextDouble();
+        double precioFinal = precios[tipo - 1] * (1 - descuento / 100);
+        System.out.printf("El precio final (sin iva) con descuento para el tipo de matrícula %d es: %.2f€\n", tipo, precioFinal);
+    }
+
+    /**
+     * Método para calcular el importe total de matriculas realizadas.
+     * @param scanner Objeto Scanner para leer la entrada del usuario.
+     * @param precios Arreglo con los precios de las matriculas.
+     */
+    public static void calcularImporteTotal(Scanner scanner, double[] precios) {
+        double total = 0;
+        for (int i = 0; i < 3; i++) {
+            System.out.print("Ingrese las matrículas realizadas para el tipo de matrícula " + (i + 1) + " (1. Fitness, 2. Yoga o 3. Musculación): ");
+            int matriculas = scanner.nextInt();
+            total += matriculas * precios[i];
+        }
+        System.out.printf("El importe total (sin iva) de las matrículas realizadas es: %.2f€\n", total);
+    }
+
+    /**
+     * Método para obtener el tipo de matrícula en formato de cadena.
+     * @param tipo Número del tipo de matrícula (1, 2 o 3).
+     * @return Nombre del tipo de matrícula.
+     */
+    public static String getTipoMatricula(int tipo) {
+        switch (tipo) {
             case 1:
-            	while (contadorIva<= 3) {
-            		System.out.println("Ingrese el IVA para el tipo de matrícula " + contadorIva + " (4 - 10 - 21): ");
-            		opcion = teclado.nextInt();
-            		if (opcion == 4) {
-            			precio1 = precio1 + ((precio1*opcion) / 100.0);
-            			System.out.println(precio1);
-            		}else if (opcion == 10) {
-            			precio1 = precio1 + ((precio1*opcion) / 100.0);
-            			System.out.println(precio1);
-            		}else if (opcion == 21) {
-            			precio1 = precio1 + ((precio1*opcion) / 100.0);
-            			System.out.println(precio1);
-            		}else {
-            			System.out.println("La cantidad introducida no es valida");
-            		}
-            	}
-                
-                break;
+                return "Fitness";
             case 2:
-                
-                System.out.println("Seleccione tipo de matrícula ( 1. Fitness, 2. Yoga o 3. Musculación");
-                opcion= teclado.nextInt();
-                System.out.println("Ingrese el % de descuento");
-                descuento = teclado.nextInt();
-                if (opcion == 1) {
-                	precio1 = precio1 * descuento / 100;
-                	System.out.println("El precio final (sin iva) con descuento para el tipo de matrícula " + opcion + " es: " + precio1);
-        		}else if (opcion == 2) {
-        			precio2 = precio2 + ((precio1*opcion) / 100.0);
-        			System.out.println("El precio final (sin iva) con descuento para el tipo de matrícula " + opcion + " es: " + precio2);
-        		}else if (opcion == 3) {
-        			precio3 = precio3 * descuento / 100;
-                	System.out.println("El precio final (sin iva) con descuento para el tipo de matrícula " + opcion + " es: " + precio3);
-        		}else {
-        			System.out.println("La cantidad introducida no es valida");
-        		}
-                
-                break;
+                return "Yoga";
             case 3:
-                System.out.println("Ingrese las matrículas relizadas para el tipo de matrícula 1 (1. Fitness: ");
-                cantidad1 = teclado.nextInt();
-                System.out.println("Ingrese las matrículas relizadas para el tipo de matrícula 2 (2. Yoga: ");
-                cantidad2 = teclado.nextInt();
-                System.out.println("Ingrese las matrículas relizadas para el tipo de matrícula 3 (3. Musculación: ");
-                cantidad3 = teclado.nextInt();
-                System.out.println("El importe total (sin iva) de las matrículas relizadas es: " + ((precio1*cantidad1)+(precio2*cantidad2)+(precio3*cantidad3)));
-                break;
-            case 4:
-                System.out.println("Saliendo del programa ...");
-                break;
-            
+                return "Musculación";
             default:
-                System.out.println("Opción no válida. Por favor, ingrese un número entre 1 y 4.");
-        
-           }
+                return "Desconocido";
+        }
 		
 	}
 
