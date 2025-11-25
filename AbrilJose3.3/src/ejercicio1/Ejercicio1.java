@@ -1,3 +1,8 @@
+/*
+ * Descripción: Separar palabras de cadena de texto
+ * Autor: José Abril
+ * Fecha: 18/11/25
+ */
 package ejercicio1;
 
 import java.util.Scanner;

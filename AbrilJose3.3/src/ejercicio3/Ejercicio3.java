@@ -1,3 +1,8 @@
+/*
+ * Descripción: Codigo a partir denombre y apellidos
+ * Autor: José Abril
+ * Fecha: 18/11/25
+ */
 package ejercicio3;
 
 import java.util.Scanner;

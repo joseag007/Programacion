@@ -1,3 +1,8 @@
+/*
+ * Descripción: Comprobar si dos cadenas de textos son iguales
+ * Autor: José Abril
+ * Fecha: 18/11/25
+ */
 package ejercicio2;
 
 import java.util.Scanner;
