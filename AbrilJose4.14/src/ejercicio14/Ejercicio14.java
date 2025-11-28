@@ -42,5 +42,4 @@ public class Ejercicio14 {
         triangulo(caracter, lineas);
     }
     
-    
 }

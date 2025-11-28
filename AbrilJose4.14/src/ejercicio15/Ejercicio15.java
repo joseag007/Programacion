@@ -1,3 +1,8 @@
+/*
+ * Descripción: array numero entre 50 y 99
+ * Autor: José Abril
+ * Fecha: 21/11/25
+ */
 package ejercicio15;
 
 public class Ejercicio15 {
