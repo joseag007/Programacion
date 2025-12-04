@@ -2478,3 +2478,114 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-12-02 19:49:08.203 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-12-02 19:49:11.957
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-12-02 19:49:12.180
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-12-02 19:49:13.628
+!MESSAGE Logback config file: C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-12-02 19:49:21.313
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DAM1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-12-03 17:20:27.434 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-12-03 17:20:30.471
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-12-03 17:20:30.710
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-12-03 17:20:32.228
+!MESSAGE Logback config file: C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-12-03 17:20:40.372
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DAM1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-12-03 20:35:04.980
+!MESSAGE C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Cache\Cache_Data\data_0 (El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Cache\Cache_Data\data_0 (El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:388)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredLength(WorkingTreeIterator.java:408)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:615)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:265)
+	at org.eclipse.egit.ui.internal.staging.StagingView$60.run(StagingView.java:3920)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-12-03 20:35:25.359
+!MESSAGE C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Cache\Cache_Data\data_0 (El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Cache\Cache_Data\data_0 (El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:388)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredLength(WorkingTreeIterator.java:408)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:615)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:265)
+	at org.eclipse.egit.ui.internal.staging.StagingView$60.run(StagingView.java:3920)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-12-03 20:36:30.912
+!MESSAGE C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Cache\Cache_Data\data_0 (El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Cache\Cache_Data\data_0 (El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.openInputStream(FileTreeIterator.java:388)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredLength(WorkingTreeIterator.java:408)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:615)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:265)
+	at org.eclipse.egit.ui.internal.staging.StagingView$60.run(StagingView.java:3920)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-12-04 19:22:26.492 -----------------------------------------------
+eclipse.buildId=4.37.0.20250905-1455
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-12-04 19:22:29.852
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-12-04 19:22:30.123
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (615) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-12-04 19:22:31.552
+!MESSAGE Logback config file: C:\Users\DAM1\Documents\JavaDocs\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-12-04 19:22:37.489
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DAM1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
